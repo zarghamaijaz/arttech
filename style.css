@@ -123,6 +123,9 @@ body{
     height: 100vh;
     position: relative;
     isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .services-bg-effects{
     overflow: hidden;
@@ -154,8 +157,7 @@ body{
 
 .services-header{
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-block: 50px;
 }
 .services-title{
     font-size: 2rem;
