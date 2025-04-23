@@ -1,6 +1,6 @@
 body{
-    --clr-primary: #347ab8;
-    --clr-secondary: #f1a2ff;
+    --clr-primary: #2b4e7d;
+    --clr-secondary: #0f243d;
     --clr-text: #757575;
 }
 
@@ -19,6 +19,11 @@ body{
     display: flex;
     list-style: none;
     gap: 1rem;
+}
+.header-logo img{
+    /* height: 60px; */
+    width: 200px;
+    /* object-fit: contain; */
 }
 
 
