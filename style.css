@@ -25,6 +25,46 @@ body{
     width: 200px;
     /* object-fit: contain; */
 }
+.header .logo-light{
+    display: none;
+
+}
+.header .logo-dark{
+    display: block;
+
+}
+.header.dark .logo-dark{
+    display: none;
+}
+.header.dark .logo-light{
+    display: block;
+}
+
+.header.dark .link{
+    color: white;
+}
+
+.menu-close,
+.menu-open{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+.menu-open{
+    position: static;
+    display: block;
+}
+.menu-close img,
+.menu-open img{
+    height: 100%;
+    width: 100%;
+}
 
 
 /* Links */
@@ -100,6 +140,14 @@ body{
     border-radius: 50%;
     transform: scale(0);
 }
+.white-circle{
+    position: absolute;
+    height: 100vw;
+    width: 100vw;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(0);
+}
 .hero-bg-effects .blob{
     position: absolute;
 }
@@ -131,6 +179,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .services-bg-effects{
     overflow: hidden;
