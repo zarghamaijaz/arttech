@@ -58,7 +58,6 @@ body{
 }
 .menu-open{
     position: static;
-    display: block;
 }
 .menu-close img,
 .menu-open img{
@@ -95,7 +94,8 @@ body{
     justify-content: center;
     align-items: center;
     isolation: isolate;
-    height: calc(100vh + 2px);
+    height: 100vh;
+    /* height: calc(100vh + 2px); */
     overflow: hidden;
 }
 .hero-btn{

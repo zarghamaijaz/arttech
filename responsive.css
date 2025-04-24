@@ -1,4 +1,17 @@
 @media screen and (max-width: 768px) {
+    header{
+        gap: 1rem;
+    }
+    .header-logo img{
+        width: 120px;
+    }
+    .header-cta{
+        margin-left: auto;
+    }
+    .header-cta .btn{
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
     .header-nav{
         position: fixed;
         inset: 0;
@@ -26,6 +39,7 @@
         display: block;
         padding: 5px;
     }
+    .menu-open,
     .menu-close{
         display: block;
     }
