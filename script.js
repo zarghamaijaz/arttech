@@ -56,7 +56,7 @@ function animateBlobs(){
         duration: 2000,
       })
         .setPin(".hero")
-        .addIndicators({ name: "Hero pin" }) // add indicators (requires plugin)
+        // .addIndicators({ name: "Hero pin" }) // add indicators (requires plugin)
         .addTo(controller);
         let lastProgress = 0;
       scene.on("progress", function (e) {
@@ -172,7 +172,7 @@ function animateCards(){
         duration: totalDuration,
       })
         .setPin(".services-section")
-        .addIndicators({ name: "Services pin" }) // add indicators (requires plugin)
+        // .addIndicators({ name: "Services pin" }) // add indicators (requires plugin)
         .addTo(controller);
         scene.on("progress", function (e) {
           requestAnimationFrame(() => {
@@ -188,8 +188,8 @@ function animateCards(){
               header.classList.remove("dark");
               const transformPercent = (p - slidesProgress) / (1 - slidesProgress);
               // Now remap 0 → 1 to 0.1 → 1
-              const remapped = 0.1 + transformPercent * 0.9;
-              whiteCricle.style.transform = `scale(${remapped * 1.15})`;
+              // const remapped = 0.1 + transformPercent * 0.9;
+              whiteCricle.style.transform = `scale(${transformPercent * 1.15})`;
             }
           })
       });
