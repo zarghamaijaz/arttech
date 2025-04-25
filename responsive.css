@@ -24,6 +24,21 @@
         transition: transform 0.3s ease-in-out 0s, visibility 0.3s 0.3s;
         /* width: 100%; */
     }
+    .header.dark .header-nav{
+        background-color: black;
+    }
+    .header .open-light,
+    .header .close-light{
+        display: none;
+    }
+    .header.dark .open-light,
+    .header.dark .close-light{
+        display: block;
+    }
+    .header.dark .open-dark,
+    .header.dark .close-dark{
+        display: none;
+    }
     .header-nav.active{
         transform: translateX(0);
         visibility: visible;
