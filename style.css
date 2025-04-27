@@ -6,6 +6,7 @@ body{
 
 .header{
     position: fixed;
+    z-index: 999;
     width: 100%;
     top: 0px;
     left: 0px;
@@ -269,4 +270,98 @@ body{
     margin-inline: auto;
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+.stats{
+    margin-block: 40vh;
+    background-color: #edefff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stat{
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+.stat-number{
+    font-size: 2rem;
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+.stat-title{
+    font-size: 1rem;
+    color: var(--clr-text);
+}
+.our-team{
+    max-width: 1500px;
+    margin-inline: auto;
+    padding-inline: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-card-outer{
+    width: 33.33%;
+    padding: 25px;
+}
+.team-card{
+    display: flex;
+    box-shadow: 6px 6px 15px #0000002c;
+}
+.team-card-image{
+    width: 35%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+.team-card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-card-content{
+    flex-grow: 1;
+    padding: 20px;
+}
+.team-card-designation{
+    font-size: 0.875rem;
+    color: var(--clr-text);
+    margin-bottom: 2px;
+}
+.team-card-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.team-card-email{
+    color: var(--clr-primary);
+    font-size: 0.875rem;
+}
+.team-card-email a:hover{
+    text-decoration: underline;
+}
+.team-card-socials{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.team-card-socials-icon{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+.our-team-section{
+    padding-block: 100px;
+}
+.section-title{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.section-subtitle{
+    color: var(--clr-text);
+    text-align: center;
+    margin-bottom: 50px;
 }

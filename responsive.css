@@ -1,3 +1,17 @@
+@media screen and (max-width: 1200px){
+    .team-card-outer{
+        width: 50%;
+    }
+    .stat{
+        padding: 10px;
+    }
+    .stat-number{
+        font-size: 1.5rem;
+    }
+    .stat-title{
+        font-size: 0.9rem;
+    }
+}
 @media screen and (max-width: 768px) {
     header{
         gap: 1rem;
@@ -16,7 +30,7 @@
         position: fixed;
         inset: 0;
         z-index: 999;
-        height: 100svh;
+        height: 100vh;
         background-color: white;
         padding: 15px;
         transform: translateX(-100%);
@@ -105,5 +119,21 @@
         padding: 5px 10px;
         margin-top: 1rem;
         margin-bottom: 0px;
+    }
+    .team-card-outer{
+        width: 100%;
+    }
+    .stats{
+        margin-block: 50px;
+    }
+    .stat{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .stat-number{
+        font-size: 1rem;
+    }
+    .stat-title{
+        font-size: 0.85rem;
     }
 }
