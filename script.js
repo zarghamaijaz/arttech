@@ -176,7 +176,11 @@ function animateCards(){
         .addTo(controller);
         scene.on("progress", function (e) {
           requestAnimationFrame(() => {
-            const p = e.progress;
+            let p = e.progress;
+            // Snap if very close to edges
+            console.log(p, "P")
+            if (p < 0.05) p = 0;
+            if (p > 0.99) p = 1;
             const slidesProgress = slidesTotalWidth / totalDuration;
             const distance = p * slidesTotalWidth;
             services.style.transform = `translateX(-${distance}px)`
