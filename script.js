@@ -177,10 +177,6 @@ function animateCards(){
         scene.on("progress", function (e) {
           requestAnimationFrame(() => {
             let p = e.progress;
-            // Snap if very close to edges
-            console.log(p, "P")
-            if (p < 0.05) p = 0;
-            if (p > 0.99) p = 1;
             const slidesProgress = slidesTotalWidth / totalDuration;
             const distance = p * slidesTotalWidth;
             services.style.transform = `translateX(-${distance}px)`
@@ -193,7 +189,7 @@ function animateCards(){
               const transformPercent = (p - slidesProgress) / (1 - slidesProgress);
               // Now remap 0 → 1 to 0.1 → 1
               // const remapped = 0.1 + transformPercent * 0.9;
-              whiteCricle.style.transform = `scale(${transformPercent * 1.15})`;
+              whiteCricle.style.transform = `scale(${transformPercent * 1.5})`;
             }
           })
       });
