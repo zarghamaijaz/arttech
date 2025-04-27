@@ -208,3 +208,67 @@ function mobileMenuFunctionality(){
     nav.classList.remove("active");
   });
 }mobileMenuFunctionality();
+
+
+
+function setEqualSlideHeight() {
+  let maxHeight = 0;
+  const slides = document.querySelectorAll('.swiper-slide');
+
+  slides.forEach(slide => {
+    slide.style.height = 'auto'; // Reset first
+    if (slide.offsetHeight > maxHeight) {
+      maxHeight = slide.offsetHeight;
+    }
+  });
+
+  slides.forEach(slide => {
+    slide.style.height = maxHeight + 'px';
+  });
+}
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',
+  on: {
+    init: function() {
+      setEqualSlideHeight();
+    },
+    resize: function() {
+      setEqualSlideHeight();
+    }
+  },
+  loop: true,
+  slidesPerView: 3,
+
+  autoHeight: true,
+  // spaceBetween: 50,
+  centeredSlides: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2, // when window width >= 768px
+    },
+    480: {
+      slidesPerView: 1, // when window width >= 480px
+    },
+    // or just
+    0: {
+      slidesPerView: 1, // for mobile-first (smallest screens)
+    }
+  }
+});

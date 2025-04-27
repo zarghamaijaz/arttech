@@ -129,11 +129,26 @@
     .stat{
         width: 100%;
         flex-basis: 100%;
+        padding: 15px;
     }
-    .stat-number{
+    /* .stat-number{
         font-size: 1rem;
     }
     .stat-title{
         font-size: 0.85rem;
+    } */
+}
+
+/* For very small screens */
+
+@media screen and (max-width: 400px) {
+    .section-title{
+        font-size: 1.45rem;
+    }
+    .team-card-outer{
+        padding: 10px;
+    }
+    .team-card-name{
+        font-size: 1.25rem;
     }
 }
