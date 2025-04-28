@@ -125,24 +125,44 @@ animateBlobs();
 
 const services = document.querySelector(".services-cards");
 if(services){
-    const servicesCards = services.querySelectorAll(".services-card");
-    const callback = (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
-          }
-          else{
-            entry.target.classList.remove('reveal');
-          }
-        });
-    };
-    const observer = new IntersectionObserver(callback, {
-        root: null, // use viewport as root
-        rootMargin: '0px',
-        threshold: 0.25
+  const servicesCards = services.querySelectorAll(".services-card");
+  const callback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal');
+      }
+      else{
+        entry.target.classList.remove('reveal');
+      }
     });
-    servicesCards.forEach(card => observer.observe(card));
+  };
+  const observer = new IntersectionObserver(callback, {
+    root: null, // use viewport as root
+    rootMargin: '0px',
+    threshold: 0.25
+  });
+  servicesCards.forEach(card => observer.observe(card));
+}
 
+const globeSection = document.querySelector("#globeViz");
+if(globeSection){
+  const callback = (entries, observer) => {
+    const header = document.querySelector("#header");
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        header.classList.add('dark');
+      }
+      else{
+        header.classList.remove('dark');
+      }
+    });
+  };
+  const observer = new IntersectionObserver(callback, {
+    root: null, // use viewport as root
+    rootMargin: '0px',
+    threshold: 0.9
+  });
+  observer.observe(globeSection);
 }
 
 
