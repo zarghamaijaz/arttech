@@ -370,6 +370,12 @@ body{
     /* width: 600px;
     height: 300px; */
 }
+.swiper-slide {
+    transition: opacity 0.3s ease;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--clr-primary);
+}
 .swiper-button-next, .swiper-button-prev{
     color: var(--clr-primary);
     font-size: 25px;
@@ -429,4 +435,41 @@ body{
 
 .testimonial-card-body{
     padding-block: 25px;
+}
+
+.globe-section{
+    height: 100vh;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.globe-wapper{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    /* inset: 0; */
+}
+.globe-header{
+    text-align: center;
+}
+.globe-title{
+    font-size: 2rem;
+    letter-spacing: 0.5ch;
+}
+.globe-description{
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    color: #ddd;
+}
+
+.globe-btn{
+    margin-top: 2.5rem;
+    background-color: white;
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    /* padding: ; */
 }

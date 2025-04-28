@@ -10,6 +10,12 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/globe.gl"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/globe.gl"></script>
+    <script type="module" src="/globe-three.js" defer></script>
+
+    
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -355,71 +361,71 @@
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-card-head">
-                                <img class="testimonial-card-image" src="/assets/user-images/1.jpg" alt="">
-                                <div class="testimonial-card-info">
-                                    <h4 class="testimonial-card-name">Ashra K</h4>
-                                    <p class="testimonial-card-designation">Entrepreneur</p>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-head">
+                                    <img class="testimonial-card-image" src="/assets/user-images/1.jpg" alt="">
+                                    <div class="testimonial-card-info">
+                                        <h4 class="testimonial-card-name">Ashra K</h4>
+                                        <p class="testimonial-card-designation">Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card-body">
+                                    <p class="testimonial-card-text">
+                                        He always surprises me with quick and smart solutions. Worked twice and it was worth it. His skills in .Net and PHP Laravel are remarkable.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="testimonial-card-body">
-                                <p class="testimonial-card-text">
-                                    He always surprises me with quick and smart solutions. Worked twice and it was worth it. His skills in .Net and PHP Laravel are remarkable.
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-card-head">
-                                <img class="testimonial-card-image" src="/assets/user-images/1.jpg" alt="">
-                                <div class="testimonial-card-info">
-                                    <h4 class="testimonial-card-name">Ashra K</h4>
-                                    <p class="testimonial-card-designation">Entrepreneur</p>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-head">
+                                    <img class="testimonial-card-image" src="/assets/user-images/2.jpg" alt="">
+                                    <div class="testimonial-card-info">
+                                        <h4 class="testimonial-card-name">Ashra K</h4>
+                                        <p class="testimonial-card-designation">Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card-body">
+                                    <p class="testimonial-card-text">
+                                        He did extra than what I really expected and quick delivery. Highly recommended.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="testimonial-card-body">
-                                <p class="testimonial-card-text">
-                                    He did extra than what I really expected and quick delivery. Highly recommended.
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-card-head">
-                                <img class="testimonial-card-image" src="/assets/user-images/1.jpg" alt="">
-                                <div class="testimonial-card-info">
-                                    <h4 class="testimonial-card-name">Ashra K</h4>
-                                    <p class="testimonial-card-designation">Entrepreneur</p>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-head">
+                                    <img class="testimonial-card-image" src="/assets/user-images/3.jpg" alt="">
+                                    <div class="testimonial-card-info">
+                                        <h4 class="testimonial-card-name">Ashra K</h4>
+                                        <p class="testimonial-card-designation">Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card-body">
+                                    <p class="testimonial-card-text">
+                                        Quick and efficient service. Will hire again.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="testimonial-card-body">
-                                <p class="testimonial-card-text">
-                                    Quick and efficient service. Will hire again.
-                                </p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <div class="testimonial-card-head">
-                                <img class="testimonial-card-image" src="/assets/user-images/1.jpg" alt="">
-                                <div class="testimonial-card-info">
-                                    <h4 class="testimonial-card-name">Luis Angel M</h4>
-                                    <p class="testimonial-card-designation">Entrepreneur</p>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-head">
+                                    <img class="testimonial-card-image" src="/assets/user-images/4.jpg" alt="">
+                                    <div class="testimonial-card-info">
+                                        <h4 class="testimonial-card-name">Luis Angel M</h4>
+                                        <p class="testimonial-card-designation">Entrepreneur</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card-body">
+                                    <p class="testimonial-card-text">
+                                        He does an excellent job and efficiently.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="testimonial-card-body">
-                                <p class="testimonial-card-text">
-                                    He does an excellent job and efficiently.
-                                </p>
-                            </div>
                         </div>
-                    </div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -432,6 +438,14 @@
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
              </div>
+         </section>
+         <section class="globe-section">
+            <div id="globeViz" class="globe-wapper"></div>
+            <div class="globe-header">
+                <h2 class="globe-title font-montserrat">Best Services around the globe</h2>
+                <p class="globe-description">Stand out from the crowd with our innovative solutions</p>
+            </div>
+            <a href="#" class="btn btn-primary globe-btn">GET STARTED NOW!</a>
          </section>
     </main>
 </body>
