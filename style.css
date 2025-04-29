@@ -353,7 +353,7 @@ body{
     object-fit: contain;
 }
 .our-team-section{
-    padding-block: 100px;
+    margin-block: 150px;
 }
 .section-title{
     letter-spacing: 5px;
@@ -495,7 +495,59 @@ body{
     }
 }
 
+.projects-section{
+    margin-block: 150px;
+}
 
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-outer{
+    width: 25%;
+    padding: 15px;
+}
+.project{
+    position: relative;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.project-overlay{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0009;
+    color: white;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 225ms;
+}
+.project:hover .project-overlay,
+.project:focus .project-overlay{
+    transform: scale(1);
+    opacity: 1;
+}
+.project-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.project-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+.project-description{
+    font-size: 0.9rem;
+    color: var(--clr-text);
+}
 
 
 /* Footer */
