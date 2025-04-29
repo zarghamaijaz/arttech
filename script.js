@@ -160,7 +160,7 @@ if(globeSection){
   const observer = new IntersectionObserver(callback, {
     root: null, // use viewport as root
     rootMargin: '0px',
-    threshold: 0.9
+    threshold: 0.5
   });
   observer.observe(globeSection);
 }
@@ -310,3 +310,8 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+function footerCopyrightYear(){
+  const year = new Date().getFullYear();
+  document.getElementById("year").textContent = year;
+}footerCopyrightYear();

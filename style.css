@@ -468,8 +468,66 @@ body{
 
 .globe-btn{
     margin-top: 2.5rem;
-    background-color: white;
-    color: var(--clr-primary);
-    font-size: 1.5rem;
-    /* padding: ; */
+    font-size: 1.25rem;
+    padding: 0.75em 2em;
+}
+.shimmer{
+    position: relative;
+    overflow: hidden;
+}
+.shimmer::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 35%, white, transparent 65%);
+    opacity: 0.8;
+    animation: shimmer-animation 5s infinite ease-in;
+}
+@keyframes shimmer-animation {
+    0%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+/* Footer */
+.footer-content{
+    background-color: var(--clr-primary);
+    padding: 15px;
+}
+.footer-logo a{
+    display: block;
+    width: fit-content;
+}
+.footer-logo img{
+    width: 150px;
+    object-fit: contain;
+}
+.footer-links{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+.footer-links a{
+ color: white;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.footer-copyright{
+    font-size: 0.875rem;
+    padding: 8px 15px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
 }
