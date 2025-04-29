@@ -11,6 +11,9 @@
     .stat-title{
         font-size: 0.9rem;
     }
+    .project-outer{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px) {
     header{
@@ -137,6 +140,9 @@
     .stat-title{
         font-size: 0.85rem;
     } */
+    .project-outer{
+        width: 100%;
+    }
 }
 
 /* For very small screens */

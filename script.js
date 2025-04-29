@@ -311,6 +311,44 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
+
+
+
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+    }
+    else{
+      entry.target.classList.remove('reveal');
+    }
+  });
+}
+
+const ourTeamSection = document.querySelector(".our-team");
+if(ourTeamSection){
+  const observer = new IntersectionObserver(observerCallback, {
+    root: null, // use viewport as root
+    rootMargin: '0px',
+    threshold: 0.5
+  });
+  const teamCards = ourTeamSection.querySelectorAll(".team-card-outer");
+  teamCards.forEach(card => observer.observe(card));
+}
+const projectsSection = document.querySelector(".projects");
+if(projectsSection){
+  const observer = new IntersectionObserver(observerCallback, {
+    root: null, // use viewport as root
+    rootMargin: '0px',
+    threshold: 0.5
+  });
+  const projectCards = projectsSection.querySelectorAll(".project-outer");
+  projectCards.forEach(card => observer.observe(card));
+}
+
+
+
+
 function footerCopyrightYear(){
   const year = new Date().getFullYear();
   document.getElementById("year").textContent = year;

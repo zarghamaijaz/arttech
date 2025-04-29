@@ -305,9 +305,16 @@ body{
     padding: 25px;
 }
 .team-card{
+    transition: opacity 500ms, transform 500ms;
+    opacity: 0;
+    transform: translateY(50%);
     display: flex;
     box-shadow: 5px 5px 10px 2px #0000001c;
     border: 1px solid #dcdcdc;
+}
+.team-card-outer.reveal .team-card{
+    opacity: 1;
+    transform: translateY(0);
 }
 .team-card-image{
     width: 35%;
@@ -392,6 +399,9 @@ body{
 .swiper-pagination{
     position: static;
     margin-block: 50px;
+}
+.testimonials-section{
+    margin-block: 150px;
 }
 .testimonials-wrapper{
     max-width: 1400px;
@@ -508,12 +518,19 @@ body{
     padding: 15px;
 }
 .project{
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 500ms, opacity 500ms;
     position: relative;
     display: block;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     overflow: hidden;
+}
+.project-outer.reveal .project{
+    transform: scale(1);
+    opacity: 1;
 }
 .project-overlay{
     position: absolute;
