@@ -567,6 +567,77 @@ body{
 }
 
 
+.blogs-section{
+    margin-block: 150px;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-outer{
+    width: 33.33%;
+    padding: 15px;
+}
+.blog{
+    padding-bottom: 15px;
+    display: block;
+    border: 1px solid #ddd;
+}
+.blog-image{
+    display: block;
+    margin-bottom: 1rem;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.blog-meta{
+    padding-inline: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-text);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+.blog-title{
+    padding-inline: 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.blog-description{
+    padding-inline: 15px;
+    font-size: 0.9rem;
+    color: var(--clr-text);
+}
+
+.blog-poster{
+    padding-inline: 15px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blog-poster-image{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.blog-poster-info{
+    color: var(--clr-text);
+}
+.blog-poster-name{
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.blog-poster-designation{
+    font-size: 0.7rem;
+}
+
 /* Footer */
 .footer-content{
     background-color: var(--clr-primary);
